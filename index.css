@@ -1,9 +1,11 @@
 .test {
     background-color: green !important;
 }
+/*in order to do customization of bootstrap, you have to write !important as above.
+what this does is to override the command from the bootstrap. so it is telling the machine that
+this command is IMPORTANT so it needs to be priority above the pre-written code*/
 
 .search {
     width: 300px !important;
 
 }
-
