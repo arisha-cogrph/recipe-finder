@@ -1,11 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
 .test {
     background-color: green !important;
+    height: 80px;
 }
+
 /*in order to do customization of bootstrap, you have to write !important as above.
 what this does is to override the command from the bootstrap. so it is telling the machine that
 this command is IMPORTANT so it needs to be priority above the pre-written code*/
 
+.nav {
+    height: 60px;
+    align-items: center;
+}
+
+.sub-title {
+    color: white;
+}
+
+.masthead {
+    height: 650px;
+    align-items: center;
+    background-image: url('./img/heading-backgroung-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .search {
     width: 300px !important;
+    height: 40px;
+}
 
+.btn {
+    height: 40px;
+}
+
+.mast-title {
+    color: white;
 }
