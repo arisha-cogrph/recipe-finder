@@ -43,3 +43,28 @@ this command is IMPORTANT so it needs to be priority above the pre-written code*
 .mast-title {
     color: white;
 }
+
+.card {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    align-items: center;
+}
+
+.img {
+    border-radius: 10px;
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    color: #3765E6F;
+}
