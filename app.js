@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to fetch recipes
+    //this async function allows us to perform task such as fetching data from API without blocking the rest of the code. 
+    //useful for delayed operations like network request (calling API)
+    //this makes the page still responsive while waiting for the fetched content
     async function fetchRecipes(ingredient) {
         try {
             const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&number=5&apiKey=${apiKey}`);
@@ -77,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to display details inside the modal
+    //modal is an element of UI that appears at the top of the main content and requires the user to interact with it before
+    //they can return to the main content. Like pop-up dialog
     function displayRecipeDetails(recipe) {
         const modalBody = document.getElementById('recipeModalBody');
 
@@ -104,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Event listener for the search form
     searchForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault(); //without this, the page reloads when submitting so this prevent the default setting of the page reloading
         const ingredient = ingredientInput.value.trim();
         if (ingredient) {
             fetchRecipes(ingredient);
