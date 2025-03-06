@@ -62,7 +62,7 @@ this command is IMPORTANT so it needs to be priority above the pre-written code*
 
 .container {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .btn-primary {
